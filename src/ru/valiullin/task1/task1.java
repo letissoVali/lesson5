@@ -12,13 +12,13 @@ public class task1 {
         if(scanner.hasNextInt()){
             int a = scanner.nextInt(); // переменная для размерности массива
             int[] numbers = new int[a];
-            System.out.println("Введите цифры для поиска минимального значения:");
+            System.out.println("Введите целые числа для поиска минимального значения:");
             for (int i = 0;i < numbers.length; i++) {
                 System.out.print("Цифра в " + i + "-ом значении: ");
                 if (scanner.hasNextInt()) {
                     numbers[i] = scanner.nextInt();
                 } else {
-                    System.out.println("Введите числовое значение!");
+                    System.out.println("Введите целое числовое значение!");
                     return;
                 }
             }

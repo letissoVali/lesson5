@@ -8,8 +8,8 @@ public class task2 {
         System.out.println("Для выхода наберите exit.");
         System.out.print("Введите целое число для проверки: ");
         while (scanner.hasNext()){
-            if(scanner.hasNextInt()){
-                int number = scanner.nextInt();
+            if(scanner.hasNextDouble()){
+                double number = scanner.nextDouble();
                 if(number > 0) {
                     System.out.println("Число "+ number + " положительное.");
                 } else if (number == 0) {
@@ -29,7 +29,7 @@ public class task2 {
                 }
             } else {
                 System.out.print("Введите целое числовое значение! ");
-                //scanner.next();
+                scanner.next();
             }
         }
     }
