@@ -1,8 +1,5 @@
 package ru.valiullin.task1;
-
 import java.util.Scanner; //импорт класса
-import java.util.logging.SocketHandler;
-
 
 // TODO Написать программу для поиска минимального из двух чисел.
 public class task1 {
@@ -13,7 +10,7 @@ public class task1 {
         //first version
         System.out.print("Введите количвество цифр ддя проверки: ");
         if(scanner.hasNextInt()){
-            int a = scanner.nextInt();
+            int a = scanner.nextInt(); // переменная для размерности массива
             int[] numbers = new int[a];
             System.out.println("Введите цифры для поиска минимального значения:");
             for (int i = 0;i < numbers.length; i++) {
